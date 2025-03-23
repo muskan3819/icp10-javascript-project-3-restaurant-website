@@ -20,9 +20,9 @@ body {
 .wrapper {
     width: 420px;
     background: transparent;
-    border: 2px solid rgba(255, 255, 255, .2);
+    border: 1px solid rgb(186, 203, 244);
     backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px rgb(0, 0, 0, .2);
+    box-shadow: 0 0px 5px rgb(186, 203, 244);
     color: #fff;
     border-radius: 10px;
     padding: 30px 40px;
@@ -31,7 +31,7 @@ body {
 .wrapper h1 {
     text-align: center;
     font-size: 36px;
-
+    color:  rgb(94, 140, 247);
 }
 
 .wrapper .input-box {
@@ -77,11 +77,11 @@ body {
 .remember-forgot label input {
     accent-color: white;
     margin-right: 3px;
-
 }
 
 .remember-forgot a {
-    color: white;
+    accent-color: white;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -114,11 +114,9 @@ body {
 }
 
 .register-link p a {
-    color: #fff;
     text-decoration: none;
     font-weight: 600;
-
-
+    color:  rgb(94, 140, 247);
 }
 
 .register-link p a:hover {
