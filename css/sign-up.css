@@ -3,7 +3,7 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    background: url() no-repeat;
+    background: url("./../images/sign-up/back.img.jpeg") no-repeat;
     height: 100vh;
     background-size: cover;
 }
