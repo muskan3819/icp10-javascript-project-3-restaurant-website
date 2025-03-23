@@ -13,8 +13,6 @@ body {
     background:url('./../images/login-page/back.img.jpeg') no-repeat;
     height: 100vh;
     background-size: cover;
-
-
 }
 
 .wrapper {
@@ -64,7 +62,6 @@ body {
     top: 50%;
     transform: translateY(-50%);
     font-size: 20px;
-
 }
 
 .wrapper .remember-forgot {
@@ -87,7 +84,6 @@ body {
 
 .remember-forgot a:hover {
     text-decoration: underline;
-
 }
 
 .wrapper .btn {
@@ -102,8 +98,6 @@ body {
     font-size: 16px;
     color: black;
     font-weight: 600;
-
-
 }
 
 .wrapper .register-link {
@@ -121,4 +115,10 @@ body {
 
 .register-link p a:hover {
     text-decoration: underline;
+}
+
+.error-message{
+    color:tomato;
+    font-size: 20px;
+    margin-top: 10px;
 }
