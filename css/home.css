@@ -70,12 +70,30 @@ li a:hover::after{
     font-size: 17px;
     /* font-weight: bold; */
     border-radius: 3px;
-    
+    cursor: pointer;
 }
 
 .nav-login:hover{
     background-color: rgb(252, 186, 79);
-    transition: 0.7s;
+    box-shadow:  0 0 5px 0 black;
+    transition: 0.5s;
+}
+
+.nav-sign{
+    background-color: rgb(252, 186, 79);
+    margin-left: 10px;
+    padding: 8px 18px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    color: rgb(245, 243, 236);
+}
+
+.nav-sign:hover{
+    box-shadow:  0 0 5px 0 black;
+    transition: 0.4s;
 }
 
 .line{
