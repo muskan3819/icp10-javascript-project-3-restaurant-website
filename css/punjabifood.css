@@ -1,6 +1,12 @@
 /* Custom styles */
 body {
-    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: rgb(26, 45, 88);
+    background-color:rgb(245, 243, 236);
+    font-family: 'poppins', sans-serif;
+    
 }
 
 .menu-item {
@@ -27,4 +33,19 @@ body {
 .menu-item p {
     font-size: 1.125rem;
     color: #e3342f;
+}
+.buy-now {
+    background-color: #e3342f;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.buy-now:hover {
+    background-color: #c02d26;
 }
