@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: rgb(26, 45, 88);
+    background-color:rgb(245, 243, 236);
+    font-family: 'poppins', sans-serif;
+} 
+
+.container{
+    padding: 0px 50px;
+}
+
+.nav-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 20px ;
+}
+
+.nav-logo{
+    height: 80px;
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+
+li a{
+    color:rgb(26, 45, 88) ;
+    font-size: 20px;
+    margin-right: 45px;
+    overflow: hidden;
+}
+
+li a:hover{
+    color:rgb(26, 45, 88) ;
+}
+li a::after{   
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(26, 45, 88);
+    transition: all 0.5s;
+    pointer-events: none;
+    
+}
+
+li a:hover::after{
+    width: 70%;
+}
+
+.nav-login{
+    background-color: transparent;
+    margin-left: 10px;
+    padding: 8px 20px;
+    font-size: 17px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.nav-login:hover{
+    background-color: rgb(252, 186, 79);
+    box-shadow:  0 0 5px 0 black;
+    transition: 0.5s;
+}
+
+.nav-sign{
+    background-color: rgb(252, 186, 79);
+    margin-left: 10px;
+    padding: 8px 18px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    color: rgb(245, 243, 236);
+}
+
+.nav-sign:hover{
+    box-shadow:  0 0 5px 0 black;
+    transition: 0.4s;
+}
+
+h1{
+    color:rgb(26, 45, 88);
+    transition-duration: 0.3s;
+    font-size: 38px;
+
+}
+h1:hover{
+    color:   rgb(252, 186, 79);
+    text-align: center;
+    font-size: 42px;
+
+}
+h2{
+    color:rgb(238, 241, 247);
+    transition-duration: 0.3s;
+    font-size: 42px;
+
+}
+h2:hover{
+    color:   rgb(252, 186, 79);
+    text-align: center;
+    font-size: 46px;
+
+}
+
+.img{
+    width: 1200px;
+    height: 400px;
+    border-radius: 10px;
+
+    transition-duration: 0.3s;
+
+}
+.img:hover{
+    border-radius: 20px;
+    width: 1220px;
+    height: 420px;
+
+}
+.image-container {
+    position: relative;
+  }
+  
+  .image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+  }
+  
+  
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url('hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.story {
+    padding: 2em;
+}
+
+.team {
+    padding: 2em;
+}
+
+.team ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.team li {
+    margin-bottom: 20px;
+}
+
+.team img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.games {
+    padding: 2em;
+}
+
+.games ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.games li {
+    margin-bottom: 20px;
+}
+
+#memory-match-game {
+    width: 400px;
+    height: 400px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#memory-match-game div {
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#recipe-scramble-game {
+    width: 400px;
+    height: 200px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#game-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    width: 400px;
+    margin: 40px auto;
+}
+
+.food-card {
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.food-card img {
+    width: 50px;
+    height: 50px;
+}
+
+.flipped {
+    transform: rotateY(180deg);
+}
