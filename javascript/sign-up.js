@@ -8,14 +8,14 @@ function validateForm() {
 
     // Check if passwords match
     if (password !== confirmPassword) {
-        errorMessage.textContent = "Passwords do not match!";
+        errorMessage.textContent = alert("Passwords do not match!");
         return false;
     }
 
     // Validate email format
     let emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
     if (!emailPattern.test(email)) {
-        errorMessage.textContent = "Please enter a valid email address.";
+        errorMessage.textContent = alert("Please enter a valid email address.");
         return false;
     }
 

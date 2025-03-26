@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Tasty Heaven</title>
+    <link rel="stylesheet" href="./../css/contact_us.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-div">          
+            <img src="./../icons/home-page-icon/th-logo.png" class="nav-logo">
+            <ul class="nav-links">
+                <li><a href="./../index.html">HOME</a></li>
+                <li><a href="./pages/menu.html">MENU</a></li>
+                <li><a href="./pages/reservation.html">RESERVATIONS</a></li>
+                <li><a href="./pages/contact_us.html">CONTACT US</a></li>
+                <li><a href="./pages/about_us.html">ABOUT US</a></li>
+                <a href="./pages/login.html"><button class="nav-login">LOGIN</button></a>
+                <a href="./pages/sign-up.html"><button class="nav-sign">SIGN UP</button></a>
+            </ul>
+        </div>
+    </div>
+    <hr class="line">
+    
+    <div class="heading">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you! Below, you'll find our contact details, business hours, and a map to locate us.</p>
+    </div>
+
+    <div class="contact-info">
+        <h2>Our Contact Details</h2>
+        <p><strong>Phone:</strong> <a href="tel:+91 8262866596">+91 8262866596</a></p>
+        <p><strong>Email:</strong> <a href="mailto:support@tastyheaven.com">tastyheaven@gmail.com</a></p>
+        <p><strong>Address:</strong> Goregaon, Mumbai, Maharashtra 400065</p>
+    </div>
+
+    <div class="business-hours">
+        <h2>Business Hours</h2>
+        <p><strong>Monday - Friday:</strong> 9:00 AM - 12:00 PM</p>
+        <p><strong>Saturday:</strong> 12:00 PM - 12:00 AM</p>
+        <p><strong>Sunday:</strong> 24 hours</p>
+    </div>
+
+    
+    <div class="map">
+        <h2>Find Us Here</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30148.392855428992!2d72.88310738706357!3d19.17120449737805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b7536f2b8b1b%3A0x3ef47f0aaf8e67db!2sTasty%20Heaven!5e0!3m2!1sen!2sin!4v1742831735088!5m2!1sen!2sin" 
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        
+    </div>
+
+    <div class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </div>
+
+    <script src="./../javascript/contact_us.js"></script>
+</body>
+</html>
