@@ -57,7 +57,7 @@ h2 {
     background-color: (252, 186, 79)
 }
 
-button {
+.addbtn {
     padding: 8px 16px;
     background-color: #3498db;
     color: white;
@@ -67,7 +67,7 @@ button {
     transition: background-color 0.3s;
 }
 
-button:hover {
+.addbtn:hover {
     background-color: #2980b9;
 }
 #cart-container {
@@ -90,7 +90,7 @@ button:hover {
     margin-bottom: 10px;
 }
 
-button {
+.btn {
     background-color: #3498db;
     color: white;
     padding: 10px;
@@ -100,6 +100,6 @@ button {
     transition: background-color 0.3s;
 }
 
-button:hover {
+.btn:hover {
     background-color: #2980b9;
 }
