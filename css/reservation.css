@@ -165,3 +165,11 @@ header {
     color: rgb(26, 45, 88);
     font-weight: bold;
 }
+.reservation-form {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
