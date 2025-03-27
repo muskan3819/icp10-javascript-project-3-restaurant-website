@@ -13,4 +13,11 @@ function displayCart() {
         alert('Your cart is empty.');
         return;
     }
+    let cartContent = 'Your Cart:\n';
+    cart.forEach(item => {
+        cartContent += `${item.name} (${item.quantity})\n`;
+    });
+
+    alert(cartContent);
 }
+
