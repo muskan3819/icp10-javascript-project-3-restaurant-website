@@ -31,3 +31,8 @@ function updatePrice() {
 
 seatsSelect.addEventListener('change', updatePrice);
 tableTypeSelect.addEventListener('change', updatePrice);
+
+document.getElementById('reservation-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    popup.style.display = 'flex';
+});
