@@ -224,6 +224,9 @@ header {
             border-radius: 5px;
             cursor: pointer;
         }
+        .popup button:hover {
+            background-color: rgb(252, 186, 79);
+        }
         @media (max-width: 768px) {
             .reservation-form-section {
                 padding: 40px 15px;
