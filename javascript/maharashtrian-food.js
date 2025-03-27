@@ -8,4 +8,9 @@ function addToCart(itemName) {
     }
     displayCart();
 }
-
+function displayCart() {
+    if (cart.length === 0) {
+        alert('Your cart is empty.');
+        return;
+    }
+}
