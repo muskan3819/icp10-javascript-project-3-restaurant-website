@@ -36,3 +36,6 @@ document.getElementById('reservation-form').addEventListener('submit', function(
     event.preventDefault();
     popup.style.display = 'flex';
 });
+popupButton.addEventListener('click', function() {
+    window.location.href = './../pages/payment.html';
+});
