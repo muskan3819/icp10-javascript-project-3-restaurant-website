@@ -6,4 +6,6 @@ function addToCart(itemName) {
     } else {
         cart.push({ name: itemName, quantity: 1 });
     }
+    displayCart();
 }
+
