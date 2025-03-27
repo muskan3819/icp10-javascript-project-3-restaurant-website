@@ -193,3 +193,6 @@ header {
             cursor: pointer;
             transition: background-color 0.3s;
         }
+        .reservation-form button:hover {
+            background-color: rgb(252, 186, 79);
+        }
