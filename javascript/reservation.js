@@ -1,0 +1,1 @@
+const seatsSelect = document.getElementById('seats');
