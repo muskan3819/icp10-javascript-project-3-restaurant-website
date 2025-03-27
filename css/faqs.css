@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: rgb(26, 45, 88);
+    background-color: rgb(245, 243, 236);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    padding: 0 50px;
+}
+
+.nav-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 20px;
+}
+
+.nav-logo {
+    height: 80px;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+
+li a {
+    color: rgb(26, 45, 88);
+    font-size: 20px;
+    margin-right: 45px;
+    overflow: hidden;
+    transition: color 0.5s;
+}
+
+li a:hover {
+    color: rgb(26, 45, 88);
+}
+
+li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(26, 45, 88);
+    transition: width 0.5s;
+}
+
+li a:hover::after {
+    width: 70%;
+}
+
+.nav-login, .nav-sign {
+    padding: 8px 20px;
+    font-size: 17px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+.nav-login {
+    background-color: transparent;
+    margin-left: 10px;
+}
+
+.nav-login:hover {
+    background-color: rgb(252, 186, 79);
+    box-shadow: 0 0 5px 0 black;
+}
+
+.nav-sign {
+    background-color: rgb(252, 186, 79);
+    margin-left: 10px;
+    font-weight: bold;
+    border: none;
+    color: rgb(245, 243, 236);
+}
+
+.nav-sign:hover {
+    box-shadow: 0 0 5px 0 black;
+}
+
+.line {
+    width: 100%;
+    height: 1.5px;
+    background-color: rgb(26, 45, 88);
+}
+
+.heading {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.heading h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: rgb(26, 45, 88);
+}
+
+.heading p {
+    font-size: 18px;
+    color: rgb(100, 100, 100);
+    margin-top: 10px;
+}
+
+.faq-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(26, 45, 88);
+}
+
+.faq {
+    border-bottom: 1px solid rgb(26, 45, 88);
+    padding: 15px 0;
+}
+
+.faq:last-child {
+    border-bottom: none;
+}
+
+.faq-question {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(26, 45, 88);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.faq-question:hover {
+    color: rgb(252, 186, 79);
+}
+
+.faq-answer {
+    margin: 10px 0 0;
+    font-size: 18px;
+    color: rgb(100, 100, 100);
+    line-height: 1.6;
+    display: none;
+    padding-left: 10px;
+}
+
+.faq-answer.visible {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .nav-div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    li a {
+        font-size: 18px;
+        margin-right: 20px;
+    }
+
+    .faq-container {
+        padding: 20px 30px;
+        margin: 30px 15px;
+    }
+
+    .faq-question {
+        font-size: 18px;
+    }
+
+    .faq-answer {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .nav-div {
+        padding: 10px;
+    }
+
+    li a {
+        font-size: 16px;
+        margin-right: 10px;
+    }
+
+    .faq-container {
+        padding: 15px 20px;
+        margin: 20px 10px;
+    }
+
+    .faq-question {
+        font-size: 16px;
+    }
+
+    .faq-answer {
+        font-size: 14px;
+    }
+
+    .heading h1 {
+        font-size: 32px;
+    }
+
+    .heading p {
+        font-size: 16px;
+    }
+}
