@@ -28,3 +28,6 @@ function updatePrice() {
         priceDisplay.textContent = '';
     }
 }
+
+seatsSelect.addEventListener('change', updatePrice);
+tableTypeSelect.addEventListener('change', updatePrice);
