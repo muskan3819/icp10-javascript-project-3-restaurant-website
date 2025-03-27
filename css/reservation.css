@@ -208,6 +208,14 @@ header {
             align-items: center;
             z-index: 1000;
         }
+        .popup-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
         @media (max-width: 768px) {
             .reservation-form-section {
                 padding: 40px 15px;
