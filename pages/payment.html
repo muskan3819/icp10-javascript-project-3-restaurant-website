@@ -3,9 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Reservation Page</title>
+    <link rel="stylesheet" href="./../css/home.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f3f6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+            margin: 50px;
+            width: 80%;
+        }
+        .container1 {
+            width: 280px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .container2 {
+            width: 50%;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #2874f0;
+            font-size: 24px;
+        }
+        .input-group {
+            margin: 15px 0;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        input, select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        input:focus, select:focus {
+            border-color: #2874f0;
+            outline: none;
+            box-shadow: 0 0 5px rgba(40, 116, 240, 0.5);
+        }
+        .btn {
+            width: 100%;
+            background: #fb641b;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #d35400;
+        }
+        .payment-option {
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px 0;
+            cursor: pointer;
+            text-align: center;
+            background-color: #2874f0;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .payment-option:hover {
+            background: #1e5cb6;
+        }
+    </style>
 </head>
 <body>
-    <h1>payment page</h1>
+    <div class="container">
+        <div class="nav-div">          
+                <img src="./../icons/home-page-icon/th-logo.png" class="nav-logo">
+                <ul class="nav-links">
+                    <li><a href="./../index.html">HOME</a></li>
+                    <li><a href="./../pages/menu.html">MENU</a></li>
+                    <li><a href="./../pages/reservation.html">RESERVATIONS</a></li>
+                    <li><a href="./../pages/innovation.html">CONTACT US</a></li>
+                    <li><a href="./../pages/about.html">ABOUT US</a></li>
+                    <a href="./../pages/sign-up.html"><button class="nav-login">SIGN UP</button></a>
+                </ul>
+        </div>
+    </div>
+    <hr class="line">
+    <script src="./../javascript/home.js"></script>
+    <h2>Secure Payment</h2>
+    <div class="wrapper">
+        <div class="container1">
+            <div id="yera">
+                <div class="payment-option" onclick="showPaymentFields('card')">Credit/Debit Card</div>
+                <div class="payment-option" onclick="showPaymentFields('upi')">UPI</div>
+                <div class="payment-option" onclick="showPaymentFields('netbanking')">Net Banking</div>
+                <div class="payment-option" onclick="showPaymentFields('cod')">Cash on Delivery</div>
+            </div>
+        </div>
+        <div class="container2">
+            <div id="cardFields" style="display: none;">
+                <div class="input-group">
+                    <label for="cardNumber">Card Number</label>
+                    <input type="text" id="cardNumber" placeholder="XXXX-XXXX-XXXX-XXXX" maxlength="19" required>
+                </div>
+                <div class="input-group">
+                    <label for="expiry">Expiry Date</label>
+                    <input type="text" id="expiry" placeholder="MM/YY" maxlength="5" required>
+                </div>
+                <div class="input-group">
+                    <label for="cvv">CVV</label>
+                    <input type="password" id="cvv" placeholder="XXX" maxlength="3" required>
+                </div>
+            </div>
+            <div id="upiFields" style="display: none;">
+                <div class="input-group">
+                    <label for="upiId">UPI ID</label>
+                    <input type="text" id="upiId" placeholder="example@upi" required>
+                </div>
+            </div>
+            <div id="netbankingFields" style="display: none;">
+                <div class="input-group">
+                    <label for="bank">Select Bank</label>
+                    <select id="bank">
+                        <option value="sbi">State Bank of India</option>
+                        <option value="hdfc">HDFC Bank</option>
+                        <option value="icici">ICICI Bank</option>
+                        <option value="axis">Axis Bank</option>
+                    </select>
+                </div>
+            </div>
+            <button class="btn" id="payNowBtn" onclick="processPayment()">Pay Now</button>
+            <button class="btn" id="orderNowBtn" onclick="orderconfirm()" style="display: none;">Order Now</button>
+        </div>
+    </div>
+    <script>
+        function showPaymentFields(method) {
+            document.getElementById('cardFields').style.display = method === 'card' ? 'block' : 'none';
+            document.getElementById('upiFields').style.display = method === 'upi' ? 'block' : 'none';
+            document.getElementById('netbankingFields').style.display = method === 'netbanking' ? 'block' : 'none';
+            document.getElementById('payNowBtn').style.display = method === 'cod' ? 'none' : 'block';
+            document.getElementById('orderNowBtn').style.display = method === 'cod' ? 'block' : 'none';
+        }
+        function processPayment() {
+            alert('Payment Successful!');
+
+        }
+        function orderconfirm(){
+            alert('Order is confirmed!');
+        }
+    </script>
 </body>
 </html>
