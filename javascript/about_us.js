@@ -18,16 +18,16 @@ cardImage.addEventListener('click', () => {
 startBtn.addEventListener('click', () => {
   gameStarted = true;
   score = 0;
-  scoreElement.textContent = `Score1: ${score}`;
+  scoreElement.textContent = `Score: ${score}`;
   gameImagesElement.innerHTML = '';
 
   // Define your own image file names or URLs
   const myImages = [
-    '../images/about_us/chicken-leg (1).png',
-    '../images/about_us/paneer-tikka (2).png',
-    '../images/about_us/s1.avif',
-    '../images/about_us/macarons.png',
-    '../images/about_us/momos.png',
+    '../images/about_us/n3.jpg',
+    '../images/about_us/p1.jpg',
+    '../images/about_us/t1.jpeg',
+    '../images/about_us/v1.jpg',
+    '../images/about_us/m3.jpeg',
   ];
 
   for (let i = 0; i < 10; i++) {
@@ -41,7 +41,7 @@ startBtn.addEventListener('click', () => {
 
     gameImage.addEventListener('click', () => {
       score++;
-      scoreElement.textContent = `Score1: ${score}`;
+      scoreElement.textContent = `Score: ${score}`;
       if (score >= 20) {
         alert('Congratulations! You won!');
         gameStarted = false;
@@ -59,7 +59,7 @@ startBtn.addEventListener('click', () => {
 resetBtn.addEventListener('click', () => {
   gameStarted = false;
   score = 0;
-  scoreElement.textContent = `Score1: ${score}`;
+  scoreElement.textContent = `Score: ${score}`;
   gameImagesElement.innerHTML = '';
   cardBack.style.display = 'none';
 });
