@@ -501,3 +501,82 @@ color: #8E2DE2;
       }
     
 }
+/*responsive*/
+
+/* Mobile (max-width: 768px) */
+
+@media only screen and (max-width: 768px) {
+   
+    .card-container, .card-container3 {
+      flex-direction: column;
+    }
+    .card, .card3 {
+      width: 100%;
+      margin: 10px 0;
+    }
+    .game-container1 {
+      width: 100%;
+      height: 300px;
+    }
+    footer {
+      padding: 20px;
+    }
+    .footer-container-1 {
+      flex-direction: column;
+    }
+    .footer-section {
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Tablet (max-width: 1024px) */
+  
+  @media only screen and (max-width: 1024px) {
+    .card-container, .card-container3 {
+      flex-direction: row;
+    }
+    .card, .card3 {
+      width: calc(50% - 10px);
+      margin: 10px;
+    }
+    .game-container1 {
+      width: 100%;
+      height: 350px;
+    }
+    footer {
+      padding: 30px;
+    }
+    .footer-container-1 {
+      flex-direction: row;
+    }
+    .footer-section {
+      margin-right: 20px;
+    }
+  }
+  
+  /* Laptop (max-width: 1440px) 
+  
+  @media only screen and (max-width: 1440px) {
+    
+    .card-container, .card-container3 {
+      flex-direction: row;
+    }
+    .card, .card3 {
+      width: calc(25% - 10px);
+      margin: 10px;
+    }
+    .game-container1 {
+      width: 100%;
+      height: 400px;
+    }
+    footer {
+      padding: 40px;
+    }
+    .footer-container-1 {
+      flex-direction: row;
+    }
+    .footer-section {
+      margin-right: 30px;
+    }
+  }
+  */
