@@ -254,3 +254,78 @@ header nav a {
     color: #f9f0f0;
     font-size: 22px;
   }
+
+  .game-container1 {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+  }
+  
+  .card1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .card1-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .card1-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    display: none;
+  }
+  
+  .start1-btn, .reset1-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .score1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .game1-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  
+  .game1-image {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .game1-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  
+  
