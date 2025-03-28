@@ -118,3 +118,37 @@ header {
     font-size: 16px;
     margin-bottom: 20px;
 }
+.table-section {
+    padding: 60px 15px;
+    text-align: center;
+    background-color: #f8f8f8;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.table-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: rgb(26, 45, 88);
+    font-weight: bold;
+}
+
+.table-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.table-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.table-images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+}
