@@ -20,6 +20,6 @@ function displayCart() {
 
     alert(cartContent);
 
-    //window.location.href = './payment.html'; 
+    window.location.href = './../pages/payment.html'; 
 }
 
