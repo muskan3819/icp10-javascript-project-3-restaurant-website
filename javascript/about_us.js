@@ -21,7 +21,6 @@ startBtn.addEventListener('click', () => {
   scoreElement.textContent = `Score: ${score}`;
   gameImagesElement.innerHTML = '';
 
-  // Define your own image file names or URLs
   const myImages = [
     '../images/about_us/n3.jpg',
     '../images/about_us/p1.jpg',
@@ -34,7 +33,6 @@ startBtn.addEventListener('click', () => {
     const gameImage = document.createElement('div');
     gameImage.classList.add('game1-image');
     const image = document.createElement('img');
-    // Select a random image from your array
     image.src = myImages[Math.floor(Math.random() * myImages.length)];
     gameImage.appendChild(image);
     gameImagesElement.appendChild(gameImage);
@@ -47,7 +45,6 @@ startBtn.addEventListener('click', () => {
         gameStarted = false;
       }
 
-      // Change the image after clicking on it
       const newImage = document.createElement('img');
       newImage.src = myImages[Math.floor(Math.random() * myImages.length)];
       gameImage.innerHTML = '';
