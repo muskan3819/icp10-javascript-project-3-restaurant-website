@@ -1,42 +1,86 @@
 <!DOCTYPE html>
-<html lang="pa">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Punjabi Food Menu - ਪੰਜਾਬੀ ਖਾਣਾ ਮੇਨੂ</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="../css/punjabifood.css">
+    <title>Tasty Heaven - Punjabi Menu</title>
+    <link rel="stylesheet" href="./../css/home.css">
+    <link rel="stylesheet" href="./../css/punjabi-food.css">
 </head>
-<body class="bg-yellow-100">
+<body>
     <div class="container">
         <div class="nav-div">          
-                <img src="../icons/home-page-icon/th-logo.png" class="nav-logo">
+                <img src="./../icons/home-page-icon/th-logo.png" class="nav-logo">
                 <ul class="nav-links">
                     <li><a href="./index.html">HOME</a></li>
                     <li><a href="./pages/menu.html">MENU</a></li>
                     <li><a href="./pages/reservation.html">RESERVATIONS</a></li>
-                    <li><a href="./pages/innovation.html">CONTACT US</a></li>
+                    <li><a href="./pages/contact_us.html">CONTACT US</a></li>
                     <li><a href="./pages/about_us.html">ABOUT US</a></li>
                     <a href="./pages/login.html"><button class="nav-login">LOGIN</button></a>
                     <a href="./pages/sign-up.html"><button class="nav-sign">SIGN UP</button></a>
                 </ul>
         </div>
     </div>
-    
-</div>
-    <div class="container mx-auto p-6">
-        <h1 class="text-4xl font-bold text-center text-red-600">🍛 Punjabi Food Menu - ਪੰਜਾਬੀ ਖਾਣਾ ਮੇਨੂ 🍛</h1>
-
-        <!-- Search Box -->
-        <div class="flex justify-center my-4">
-            <input type="text" id="search" placeholder="Search... / ਖੋਜ ਕਰੋ..." class="p-2 border rounded-md w-1/2">
+    <hr class="line">
+    <section id="menu">
+        <h2> Punjabi Menu</h2>
+        <div class="menu-category">
+            <h3 class="menu-title">Starters</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="./../images/punjabi-food/paneer-tikka.jpg" alt="Paneer Tikka">
+                    <h4>Paneer Tikka</h4>
+                    <button onclick="addToCart('Paneer Tikka')" class="addbtn">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="./../images/punjabi-food/amritsari-kulcha.jpg" alt="Amritsari Kulcha">
+                    <h4>Amritsari Kulcha</h4>
+                    <button onclick="addToCart('Amritsari Kulcha')" class="addbtn">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="./../images/punjabi-food/chole-bhature.jpg" alt="Chole Bhature">
+                    <h4>Chole Bhature</h4>
+                    <button onclick="addToCart('Chole Bhature')" class="addbtn">Add to Cart</button>
+                </div>
+            </div>
         </div>
-
-        <!-- Menu Items -->
-        <div id="menu" class="grid md:grid-cols-3 gap-6">
-            <!-- Menu items will be inserted here by JavaScript -->
+        <div class="menu-category">
+            <h3 class="menu-title">Main Course</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="./../images/punjabi-food/rajma-chawal.jpg" alt="Rajma Chawal">
+                    <h4>Rajma Chawal</h4>
+                    <button onclick="addToCart('Rajma Chawal')" class="addbtn">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="./../images/punjabi-food/makki-roti-sarson-saag.jpg" alt="Makki di Roti & Sarson da Saag">
+                    <h4>Makki di Roti & Sarson da Saag</h4>
+                    <button onclick="addToCart('Makki di Roti & Sarson da Saag')" class="addbtn">Add to Cart</button>
+                </div>
+            </div>
         </div>
-    </div>
-    <script src="../javascript/punjabifood.js"></script>
+        <div class="menu-category">
+            <h3 class="menu-title">Desserts</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="./../images/punjabi-food/gajar-halwa.jpg" alt="Gajar Ka Halwa">
+                    <h4>Gajar Ka Halwa</h4>
+                    <button onclick="addToCart('Gajar Ka Halwa')" class="addbtn">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="./../images/punjabi-food/phirni.jpg" alt="Phirni">
+                    <h4>Phirni</h4>
+                    <button onclick="addToCart('Phirni')" class="addbtn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div id="cart-container" style="display: none;">
+            <h3>Your Cart</h3>
+            <ul id="cart-list"></ul>
+            <button onclick="checkout()" class="btn">Proceed to Checkout</button>
+        </div>
+    </section>
+    <script src="./../javascript/punjabi-food.js"></script>
 </body>
 </html>
