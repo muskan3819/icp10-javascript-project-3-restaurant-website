@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./../css/punjabifood.css">
 </head>
 <body>
-    <div class="container">
+    <!-- <div class="container">
         <div class="nav-div">          
                 <img src="./../icons/home-page-icon/th-logo.png" class="nav-logo">
                 <ul class="nav-links">
@@ -21,7 +21,28 @@
                     <a href="./pages/sign-up.html"><button class="nav-sign">SIGN UP</button></a>
                 </ul>
         </div>
-    </div>
+    </div> -->
+    <nav>
+        <ul class="sidebar">
+          <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Reservation</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+        <ul>
+          <li ><a href="#">Tasty Heaven</a></li>
+          <li class="hideOnMobile"><a href="../index.html">Home</a></li>
+          <li class="hideOnMobile"><a href="../pages/menu.html">Menu</a></li>
+          <li class="hideOnMobile"><a href="./pages/reservation.html">Reservation</a></li>
+          <li class="hideOnMobile"><a href="./pages/about_us.html">About</a></li>
+          <li class="hideOnMobile"><a href="./pages/contact_us.html">Contact</a></li>
+          <li class="hideOnMobile"><a href="./pages/login.html">Login</a></li>
+          <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+        </ul>
+    </nav>
     <hr class="line">
     <section id="menu">
         <h2> Punjabi Menu</h2>
@@ -96,6 +117,40 @@
             <button onclick="checkout()" class="btn">Proceed to Checkout</button>
         </div>
     </section>
+    <footer>
+        <div class="footer-container-1">
+          <div class="footer-section about">
+            <h2>About Us</h2>
+            <p>we're passionate about serving more than just food. We're dedicated to creating unforgettable dining experiences that bring people together.</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="footer-section links">
+            <h2>Quick Links</h2>
+            <ul id="quick-links">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./pages/menu.html">Menu</a></li>
+              <li><a href="./pages/reservation.html">Reservation</a></li>
+              <li><a href="./pages/contact_us.html">Contact</a></li>
+              <li><a href="./pages/about_us.html">About </a></li>
+              <li><a href="./pages/faqs.html">FAQs </a></li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
+            <p>Address: 123 Street, City, Country</p>                
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>2024 Your Company. All rights reserved.</p>
+        </div>
+    </footer>
     <script src="./../javascript/punjabifood.js"></script>
 </body>
 </html>
