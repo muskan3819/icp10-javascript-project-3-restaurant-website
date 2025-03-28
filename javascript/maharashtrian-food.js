@@ -19,5 +19,7 @@ function displayCart() {
     });
 
     alert(cartContent);
+
+    //window.location.href = './payment.html'; 
 }
 
